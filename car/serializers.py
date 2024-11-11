@@ -9,7 +9,7 @@ class CarSerializer(serializers.Serializer):
         required=True
     )
     model = serializers.CharField(max_length=64, required=True)
-    horse_powers = serializers.CharField(
+    horse_powers = serializers.IntegerField(
         min_value=1,
         max_value=1914,
         required=True
